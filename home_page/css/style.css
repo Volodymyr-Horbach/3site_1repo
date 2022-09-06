@@ -1,0 +1,260 @@
+/* font-family: 'Playfair-Display', serif;
+font-family: 'Ubuntu', sans-serif; */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+*:focus:not(:focus-visible){
+    outline: none;
+}
+html{
+    font-family: 'Playfair Display', serif;
+    font-size: 0.69445vw;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    color: #626262;
+}
+body{
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+.header__wrap{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-items: baseline;
+}
+.header__logo{
+    font-family: 'Playfair-Display', serif;
+    font-size: 2.5rem;
+    letter-spacing: 9px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+.header__menu{
+    width: 65rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-family: 'Playfair-Display', serif;
+    color: #626262;
+}
+.header__menu li:hover{
+    background-color: #cac7c7;
+    transition: all 0.8s ease;
+}
+/* swiper */
+.swiper {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 93%;
+    height: 100%;
+    padding: 0px;
+  }
+/* content */
+.content__wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15rem;
+}
+.content__title{
+    margin-bottom: 3rem;
+}
+.title_active:hover{
+        background-color: #cac7c7;
+        transition: all 0.8s ease;
+        width: 17.5rem;
+        padding: 0 5px;
+}
+.title a{
+    color: #b4ad9e;
+}
+.title{
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.8rem;
+    color: #b4ad9e;
+}
+.content__text{
+    margin-bottom: 3.5rem;
+}
+h1{
+    font-family: 'Playfair-Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+}
+p{
+    font-family: 'Playfair-Display', serif;
+    font-size: 1.5rem;
+}
+/* gallery */
+.gallery, .gallery__bottom{
+    margin-top: 6rem;
+}
+.gallery__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 15rem;
+}
+.gallery__cart{
+    width: 45%;
+    height: fit-content;
+    margin-bottom: 10rem;
+}
+.gallery__title{
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+/* send_letter */
+.send_letter{
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    background-color: #f0f0f0;
+    margin-bottom: 10rem;
+    min-height: 30rem;
+    justify-content: space-evenly;
+}
+.email{
+    width: 40rem;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+    border-bottom: solid;
+    align-items: center;
+}
+a{
+    width: 32px;
+    height: 17px;
+    text-decoration: none;
+    color: #626262;
+}
+.send_letter__item{
+    font-family: 'Playfair-Display', serif;
+    font-size: 2rem;
+    border: none;
+    background-color: #f0f0f0;
+}
+/* button */
+.button__wrapper{
+    text-align: center;
+}
+.button{
+    margin-bottom: 80rem;
+    margin-top: 5rem;
+}
+.button_item{
+    border: 2px solid gray;
+    padding: 2rem 4rem;
+    font-family: 'Playfair-Display', serif;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #626262;
+}
+.button_item:hover{
+    background-color: #cac7c7;
+    transition: all 1s ease;
+}
+/* footer */
+.footer{
+    display: flex;
+    min-height: 10rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 0 5rem;
+}
+.privacy{
+    font-size: 1.5rem;
+    margin-left: 10rem;
+}
+
+.contact{
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+li:not(:last-child){
+    margin-right: 2rem;
+}
+
+.privacy li:hover{
+    text-decoration: underline;
+    transition: all 0.8s ease;
+}
+
+@media(max-width: 80em){
+    html{
+        font-size: 0.765vw;
+    }
+}
+@media(max-width: 1025px) {
+    p{
+        font-size: 1.8rem;
+    }
+}
+@media(max-width:770px){
+    p{
+        font-size: 2rem;
+    }
+}
+@media(max-width:430px){
+    .gallery__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .gallery__cart{
+        width: 75%;
+    }
+}
